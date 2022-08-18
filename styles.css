@@ -1,0 +1,12 @@
+.display-results .player-winning-message{
+    font-weight: bold;
+    font-size: 18px;
+    color: limegreen;
+}
+
+.display-results .computer-winning-message{
+    font-weight: bold;
+    font-size: 18px;
+    color: red;
+}
+
