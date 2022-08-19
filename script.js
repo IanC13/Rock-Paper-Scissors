@@ -17,10 +17,6 @@ function getComputerChoice(){
     return choice;
 }
 
-function getPlayerChoice(){
-
-}
-
 function playRound(playerSelection, computerSelection){
     let result;
 
@@ -40,7 +36,6 @@ function playRound(playerSelection, computerSelection){
     return result;
 }
 
-
 function refreshGame(ties, playerWins, computerWins, message, body, newGameButton){
     ties.textContent = 'Ties: ' + 0;
     playerWins.textContent = 'You: ' + 0;
@@ -57,7 +52,6 @@ function refreshGame(ties, playerWins, computerWins, message, body, newGameButto
     body.removeChild(newGameButton);
 }
 
-
 function playGame(button){
     let playerSelection = button.getAttribute('data-selection');
     const computerSelection = getComputerChoice();
@@ -69,8 +63,6 @@ function playGame(button){
     const computerWins = document.querySelector('.display-results #computer');
     const ties = document.querySelector('.display-results #tie');
     const message = document.querySelector('.display-results #message');
-
-    
 
     if (result[0] === 0){
         tiesVar += 1;
@@ -116,7 +108,6 @@ function playGame(button){
         });
     }
 }
-
 
 const buttons = document.querySelectorAll('button');
 let playerWinsVar = 0;
